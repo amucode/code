@@ -1,10 +1,12 @@
 1: Generate private key
 
-openssl genrsa -des3 -out my_domain.key 1024
-[Enter and confirm pass phrase]
+  # openssl genrsa -des3 -out my_domain.key 1024
+
+
 2: Generate CSR
 
-openssl req -nodes -newkey rsa:2048 -keyout my_domain.key -out my_domain.csr
+  # openssl req -nodes -newkey rsa:2048 -keyout my_domain.key -out my_domain.csr
+
 3: Remove pass phrase from key
 
 Make sure key only readable by root!
